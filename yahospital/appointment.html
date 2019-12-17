@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>广东海洋大学牙科医院</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #fff0f0;
+        }
+        .head{
+            margin: 1em;
+            text-align: center;
+            color: red;
+            font-size: 20px;
+            font-family: 微软雅黑,sans-serif;
+        }
+        .main{
+            max-width: 400px;
+            max-height: 300px;
+            margin: 4em auto 4em auto;
+            padding: 5em;
+            background-color: #ffffff;
+            text-align: center;
+            border: 2px solid #ffffff;
+            border-radius: 20px;
+        }
+        .main a{
+            display: block;
+            width: 6em;
+            height: 1.5em;
+            color: #999;
+            margin: 4px auto 4px auto;
+            text-decoration: none;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+        .main a:hover{
+            background-color: brown;
+            color: white;
+        }
+        form table{
+            text-align: left;
+        }
+        form table tr td{
+            padding: 3px;
+        }
+        form table tr td textarea{
+            width: 300px;
+            height: 50px;
+        }
+        .submit{
+            width: 30px;
+            height: 20px;
+            border: 1px solid lightskyblue;
+            border-radius: 5px;
+            background-color: lightskyblue;
+            color: #ffffff;
+        }
+        #age{
+            width: 50px;
+        }
+        #name{
+            width: 100px;
+        }
+        div.nav{
+            width: 1200px;
+            margin: auto;
+            background-color: #ff6666;
+            overflow: hidden;
+        }
+        ul.nav{
+            list-style-type: none;
+        }
+        ul.nav li{
+            float: left;
+            padding: 0.5em 5.2em 0.5em 5.2em;
+        }
+        ul.nav a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="head">
+    <h1 class="title">广东海洋大学牙科医院</h1>
+</div>
+<div class="nav">
+    <ul class="nav">
+            <li><a href="main.html">首页</a></li>
+            <li><a href="hospitalText.html">医院概况</a></li>
+            <li><a href="doctorText.html">医生信息</a></li>
+            <li><a href="serverText.html">医疗介绍</a></li>
+            <li><a href="mainSearch.html">预约与查询服务</a></li>
+    </ul>
+</div>
+<div class="main">
+    <form method="post" action="putDateIntoSQL.jsp">
+        <table>
+            <tr>
+                <td>
+                    id<input type="text" name="id" required>
+                    姓名<input type="text" name="name" id="name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    性别<select required name="sex">
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select>
+                    年龄<input type="text" name="age" id="age" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    预约医生
+                    <select required name="doctor">
+                        <option value="甲">甲</option>
+                        <option value="乙">乙</option>
+                        <option value="丙">丙</option>
+                        <option value="丁">丁</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>预约就诊日期<input type="date" name="date" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>请求服务描述</p><textarea name="serverKind" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="submit" value="提交"> </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
