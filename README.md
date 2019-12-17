@@ -10,4 +10,6 @@
 
 #数据库文件 在文件夹mysql-file里面
 
-#页面文件 将yahospital文件夹及文件放入tomcat的webapps文件夹下。然后选择里面login.html
+#页面文件 将yahospital文件夹及文件放入tomcat的webapps文件夹下。然后选择登陆login.html
+
+#管理员账号： 5201314 5201314   病人账号：2222222 2222222
